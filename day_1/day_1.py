@@ -40,20 +40,26 @@
 
 # Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
 
+import os
 
-class Solution:
+BASE_DIR = os.path.dirname(__file__)
+
+
+class CaloriesCounter:
     def response_part_1(self) -> int:
-        f = [i.splitlines() for i in open("day_1_input.txt", "r").read().split("\n\n")]
-        print(f)
+        f = [
+            i.splitlines()
+            for i in open(f"{BASE_DIR}/day_1_input.txt", "r").read().split("\n\n")
+        ]
         max = 0
 
-        # Solution 1
+        # Version 1
         for i in f:
             if sum(map(int, i)) >= max:
                 max = sum(map(int, i))
         return max  # 71934
 
-        # Solution 2
+        # Version 2
         # for i in f:
         #     sum = 0
         #     for x in i:
@@ -66,7 +72,7 @@ class Solution:
         f = sorted(
             [
                 sum(map(int, i.splitlines()))
-                for i in open("day_1_input.txt", "r").read().split("\n\n")
+                for i in open(f"{BASE_DIR}/day_1_input.txt", "r").read().split("\n\n")
             ],
             reverse=True,
         )
@@ -74,5 +80,5 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print(Solution().response_part_1())
-    print(Solution().response_part_2())
+    print(CaloriesCounter().response_part_2())
+    print(CaloriesCounter().response_part_1())
