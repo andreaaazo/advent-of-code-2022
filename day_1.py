@@ -1,3 +1,4 @@
+# ----------------------------------------- Part One ---------------------------------
 # The jungle must be too overgrown and difficult to navigate in vehicles or access from the air; the Elves' expedition traditionally goes on foot. As your boats approach land, the Elves begin taking inventory of their supplies. One important consideration is food - in particular, the number of Calories each Elf is carrying (your puzzle input).
 
 # The Elves take turns writing down the number of Calories contained by the various meals, snacks, rations, etc. that they've brought with them, one item per line. Each Elf separates their own inventory from the previous Elf's inventory (if any) by a blank line.
@@ -29,10 +30,49 @@
 
 # Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 
+
+# ----------------------------------------- Part Two ---------------------------------
+# By the time you calculate the answer to the Elves' question, they've already realized that the Elf carrying the most Calories of food might eventually run out of snacks.
+
+# To avoid this unacceptable situation, the Elves would instead like to know the total Calories carried by the top three Elves carrying the most Calories. That way, even if one of those Elves runs out of snacks, they still have two backups.
+
+# In the example above, the top three Elves are the fourth Elf (with 24000 Calories), then the third Elf (with 11000 Calories), then the fifth Elf (with 10000 Calories). The sum of the Calories carried by these three elves is 45000.
+
+# Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
+
+
 class Solution:
-    def response(self):
-        f = open("day_1_input.txt", "r").read()
-        print(f.split("\n\n"))
+    def response_part_1(self) -> int:
+        f = [i.splitlines() for i in open("day_1_input.txt", "r").read().split("\n\n")]
+        print(f)
+        max = 0
+
+        # Solution 1
+        for i in f:
+            if sum(map(int, i)) >= max:
+                max = sum(map(int, i))
+        return max  # 71934
+
+        # Solution 2
+        # for i in f:
+        #     sum = 0
+        #     for x in i:
+        #         sum += int(x)
+        #     if sum >= max:
+        #         max = sum
+        # return max
+
+    def response_part_2(self) -> int:
+        f = sorted(
+            [
+                sum(map(int, i.splitlines()))
+                for i in open("day_1_input.txt", "r").read().split("\n\n")
+            ],
+            reverse=True,
+        )
+        return sum(f[:3])  # 211447
+
 
 if __name__ == "__main__":
-    Solution().response()
+    print(Solution().response_part_1())
+    print(Solution().response_part_2())
