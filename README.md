@@ -28,3 +28,16 @@ python day_1.py
 Environments:
 
 - Python `v3.10`
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/andreaaazo/advent-of-code-2022.svg?style=for-the-badge
+[contributors-url]: https://github.com/andreaaazo/advent-of-code-2022/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/andreaaazo/advent-of-code-2022.svg?style=for-the-badge
+[forks-url]: https://github.com/andreaaazo/advent-of-code-2022/network/members
+[stars-shield]: https://img.shields.io/github/stars/andreaaazo/advent-of-code-2022.svg?style=for-the-badge
+[stars-url]: https://github.com/andreaaazo/advent-of-code-2022/stargazers
+[issues-shield]: https://img.shields.io/github/issues/andreaaazo/advent-of-code-2022.svg?style=for-the-badge
+[issues-url]: https://github.com/andreaaazo/advent-of-code-2022/issues
+[license-shield]: https://img.shields.io/github/license/andreaaazo/advent-of-code-2022.svg?style=for-the-badge
+[license-url]: https://github.com/andreaaazo/advent-of-code-2022/blob/master/LICENSE.txt
