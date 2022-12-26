@@ -19,7 +19,7 @@ You don't need a computer science background to participate - just a little prog
 
 
 <!-- SOLUTIONS -->
-## Running Solutions
+## 🏃 Running Solutions
 
 To run a solution, `cd` into its directory and invoke the program:
 
