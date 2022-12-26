@@ -8,7 +8,7 @@
 
 <!-- TITLE -->
 # Advent of Code Solutions
-My solutions to the [Advent of Code](https://adventofcode.com/) problems in Python3.
+My solutions to the [Advent of Code](https://adventofcode.com/2022) problems in Python3.
 
 
 <!-- INTRODUCTION -->
