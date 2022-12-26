@@ -1,3 +1,10 @@
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 # Advent of Code Solutions
 
 My solutions to the [Advent of Code](https://adventofcode.com/) problems in Python3.
