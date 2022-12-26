@@ -46,7 +46,7 @@ Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/andrea
 
 Andrea Zorzi - [@andreaaa.zo](https://instagram.com/andreaaa.zo) - zorzi.andrea@outlook.com
 
-Project Link: [https://github.com/andreaaazo/http-server-python](https://github.com/andreaaazo/advent-of-code-2022)
+Project Link: [https://github.com/andreaaazo/advent-of-code-2022](https://github.com/andreaaazo/advent-of-code-2022)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
