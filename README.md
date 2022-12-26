@@ -5,15 +5,20 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Advent of Code Solutions
 
+<!-- TITLE -->
+# Advent of Code Solutions
 My solutions to the [Advent of Code](https://adventofcode.com/) problems in Python3.
 
-## What is Advent of Code?
+
+<!-- INTRODUCTION -->
+## ❔ What is Advent of Code?
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as interview prep, company training, university coursework, practice problems, a speed contest, or to challenge each other.
 
 You don't need a computer science background to participate - just a little programming knowledge and some problem solving skills will get you pretty far. Nor do you need a fancy computer; every problem has a solution that completes in at most 15 seconds on ten-year-old hardware.
 
+
+<!-- SOLUTIONS -->
 ## Running Solutions
 
 To run a solution, `cd` into its directory and invoke the program:
@@ -28,6 +33,21 @@ python day_1.py
 Environments:
 
 - Python `v3.10`
+
+
+<!-- LICENSE -->
+## 📝 License
+
+Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/andreaaazo/advent-of-code-2022/blob/main/LICENSE) for more information.
+
+
+<!-- CONTACT -->
+## 📞 Contact
+
+Andrea Zorzi - [@andreaaa.zo](https://instagram.com/andreaaa.zo) - zorzi.andrea@outlook.com
+
+Project Link: [https://github.com/andreaaazo/http-server-python](https://github.com/andreaaazo/advent-of-code-2022)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
