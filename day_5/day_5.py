@@ -68,7 +68,7 @@ class StackSupplier:
                 self.cargo[init_pos].remove(crate)
                 self.cargo[final_pos].insert(0, crate)
 
-        return "".join(str(stock[0]) for stock in self.cargo)
+        return "".join(str(stock[0]) for stock in self.cargo)  # PGSQBFLDP
 
 
 if __name__ == "__main__":
