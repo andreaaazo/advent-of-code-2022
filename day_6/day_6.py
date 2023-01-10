@@ -14,9 +14,8 @@ class SignalReceiver:
 
         return self.check_marker(14)  # 2980
 
-    def check_marker(self, len_of_characters: int) -> int:
-        """Checks for unique characters inside a string.
-        Returns position of last character, inside the unique string"""
+    def check_marker(self, len_of_string: int) -> int:
+        """Get index of last character inside a unique string of lenght n"""
 
         with open(os.path.join(BASE_DIR, "day_6_input.txt"), "r") as input:
             signal = list(input.read())
