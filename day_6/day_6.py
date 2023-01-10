@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+"""Response to day 6 of Advent Of Code 2022"""
+
 import os
 
 BASE_DIR = os.path.dirname(__file__)

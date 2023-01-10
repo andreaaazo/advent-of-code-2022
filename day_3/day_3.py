@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+"""Response to day 3 of Advent Of Code 2022"""
+
 import os
 import string
 
