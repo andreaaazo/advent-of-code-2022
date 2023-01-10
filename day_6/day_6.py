@@ -20,10 +20,10 @@ class SignalReceiver:
         with open(os.path.join(BASE_DIR, "day_6_input.txt"), "r") as input:
             signal = list(input.read())
 
-        counter = len_of_characters
+        counter = len_of_string
 
         for character in range(len(signal)):
-            packet = signal[character : character + len_of_characters]
+            packet = signal[character : character + len_of_string]
 
             # Check if packet has different character
             if len(packet) == len(list(set(packet))):
