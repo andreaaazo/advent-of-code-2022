@@ -59,13 +59,13 @@ class SpaceChecker:
                         }  # add directory
 
                     else:
-                        file_weight = int(command.split(" ")[0])
+                        file_size = int(command.split(" ")[0])
 
                         # update every directory that contains the file
                         for i in range(1, len(curr_path) + 1):
                             reduce(operator.getitem, curr_path[:i], self.disk)[
                                 "weight"
-                            ] += file_weight
+                            ] += file_size
 
     def response_part_1(self) -> int:
         """Response to part 1"""
