@@ -32,7 +32,7 @@ python day_1.py
 
 Environments:
 
-- Python `v3.10`
+- Python `v3.11`
 
 
 <!-- LICENSE -->
