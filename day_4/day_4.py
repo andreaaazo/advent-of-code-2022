@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""Response to day 4 of Advent Of Code 2022"""
+"""
+Advent Of Code 2022, day 4
+"""
 
 import os
 

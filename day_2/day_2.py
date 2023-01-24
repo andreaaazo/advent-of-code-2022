@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""Response to day 2 of Advent Of Code 2022"""
+"""
+Advent Of Code 2022, day 2
+"""
 
 import os
 
@@ -10,29 +12,6 @@ BASE_DIR = os.path.dirname(__file__)
 class RockPaperScissors:
     def response_part_1(self) -> int:
         """Response to part 1"""
-
-        # A = Rock
-        # B = Paper
-        # C = Scissors
-
-        # X = Rock
-        # Y = Paper
-        # Z = Scissors
-
-        # choice A
-        # loss with Z
-        # draw with X
-        # win Y
-
-        # choice B
-        # loss with X
-        # draw with Y
-        # win with Z
-
-        # choice C
-        # loss with Y
-        # draw with Z
-        # win with X
 
         f = [
             i.split(" ")
