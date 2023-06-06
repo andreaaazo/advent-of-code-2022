@@ -47,7 +47,7 @@ def response_part_1() -> int:
     return cycles_value
 
 
-def response_part_2() -> int:
+def response_part_2() -> str:
 
     signals = get_input()
 
