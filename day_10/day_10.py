@@ -23,7 +23,6 @@ def response_part_1() -> int:
     Response to part 1
     """
     signals = get_input()
-
     X = 1
     cycles_counter = 0
     cycles_value = 0
@@ -48,9 +47,10 @@ def response_part_1() -> int:
 
 
 def response_part_2() -> str:
-
+    """
+    Response to part 2
+    """
     signals = get_input()
-
     X = 1
     CRT_display = ""
     CRT_drawing_position = 0
@@ -66,12 +66,9 @@ def response_part_2() -> str:
         if (cycles_counter - 1) in [40, 80, 120, 160, 200, 240]:
             CRT_display += "\n"
             CRT_drawing_position = 0
-        if CRT_drawing_position in sprite_positions:
-            CRT_display += "#"
-            CRT_drawing_position += 1
-        else:
-            CRT_display += "."
-            CRT_drawing_position += 1
+
+        CRT_display += "#" if CRT_drawing_position in sprite_positions else "."
+        CRT_drawing_position += 1
 
     for signal in signals:
         if len(signal) == 1:  # is noop
