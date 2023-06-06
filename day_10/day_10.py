@@ -48,6 +48,7 @@ def response_part_1() -> int:
 
 
 def response_part_2() -> int:
+
     signals = get_input()
 
     X = 1
@@ -56,50 +57,33 @@ def response_part_2() -> int:
     sprite_positions = [X - 1, X, X + 1]
     cycles_counter = 0
 
+    def update_CRT_display() -> None:
+        nonlocal cycles_counter
+        nonlocal CRT_display
+        nonlocal CRT_drawing_position
+
+        cycles_counter += 1
+        if (cycles_counter - 1) in [40, 80, 120, 160, 200, 240]:
+            CRT_display += "\n"
+            CRT_drawing_position = 0
+        if CRT_drawing_position in sprite_positions:
+            CRT_display += "#"
+            CRT_drawing_position += 1
+        else:
+            CRT_display += "."
+            CRT_drawing_position += 1
+
     for signal in signals:
         if len(signal) == 1:  # is noop
-            cycles_counter += 1
-            if (cycles_counter - 1) in [40, 80, 120, 160, 200, 240]:
-                CRT_display += "\n"
-                CRT_drawing_position = 0
-
-            if CRT_drawing_position in sprite_positions:
-                CRT_display += "#"
-                CRT_drawing_position += 1
-            else:
-                CRT_display += "."
-                CRT_drawing_position += 1
-
+            update_CRT_display()
         else:  # is addx
             # 1st loop
-            cycles_counter += 1
-            if (cycles_counter - 1) in [40, 80, 120, 160, 200, 240]:
-                CRT_display += "\n"
-                CRT_drawing_position = 0
-            if CRT_drawing_position in sprite_positions:
-                CRT_display += "#"
-                CRT_drawing_position += 1
-            else:
-                CRT_display += "."
-                CRT_drawing_position += 1
-
+            update_CRT_display()
             # 2nd loop
-            cycles_counter += 1
-            if (cycles_counter - 1) in [40, 80, 120, 160, 200, 240]:
-                CRT_display += "\n"
-                CRT_drawing_position = 0
-
-            if CRT_drawing_position in sprite_positions:
-                CRT_display += "#"
-                CRT_drawing_position += 1
-            else:
-                CRT_display += "."
-                CRT_drawing_position += 1
-
+            update_CRT_display()
             # end addx
             X += int(signal[1])
             sprite_positions = [X - 1, X, X + 1]
-            print((sprite_positions, CRT_drawing_position))
 
     return CRT_display
 
