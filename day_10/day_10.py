@@ -1,16 +1,24 @@
+#!/usr/bin/env python3
+
+"""
+Advent Of Code 2022, day 10
+"""
+
+
 import os
 
 
 BASE_DIR = os.path.dirname(__file__)
 
+
 def response_part_1():
-    with open(f'{BASE_DIR}/input.txt', "r") as inp:
+    with open(f"{BASE_DIR}/input.txt", "r") as inp:
         signals = [line.split(" ") for line in inp.read().splitlines()]
         inp.close()
 
     X = 1
     cycles_counter = 0
-    cycles_value  = 0
+    cycles_value = 0
 
     for signal in signals:
         if len(signal) == 1:  # is noop
@@ -32,5 +40,4 @@ def response_part_1():
 
 
 if __name__ == "__main__":
-    print(response_part_1())
-    print(f'{BASE_DIR}/input.txt')
+    print(response_part_1())  # 14560
